@@ -69,3 +69,21 @@ class Store {
     return this.inventory.find((product) => product.name === name) || null;
   }
 }
+// script.js
+
+const apple = new Product("Apple", 2.5, 50);
+const banana = new Product("Banana", 1.2, 100);
+const bread = new Product("Bread", 2.0, 30);
+
+const store = new Store();
+store.addProduct(apple);
+store.addProduct(banana);
+store.addProduct(bread);
+store.addProduct(milk);
+store.addProduct(yogurt);
+
+console.log(
+  `Total Inventory Value (Before Discount): $${store
+    .getInventoryValue()
+    .toFixed(2)}`
+);
