@@ -114,3 +114,12 @@ if (product) {
 } else {
   console.log(`Product "${productName}" not found.`);
 }
+// script.js
+
+Product.applyDiscount(store.inventory, 0.15);
+
+console.log(
+  `Total Inventory Value (After Discount): $${store
+    .getInventoryValue()
+    .toFixed(2)}`
+);
