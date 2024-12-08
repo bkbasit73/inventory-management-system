@@ -96,3 +96,21 @@ console.log(
     .getInventoryValue()
     .toFixed(2)}`
 );
+// script.js
+
+Product.applyDiscount(store.inventory, 0.15);
+
+console.log(
+  `Total Inventory Value (After Discount): $${store
+    .getInventoryValue()
+    .toFixed(2)}`
+);
+// script.js
+
+const productName = "Milk";
+const product = store.findProductByName(productName);
+if (product) {
+  console.log(`Details of Product "${productName}": ${product.toString()}`);
+} else {
+  console.log(`Product "${productName}" not found.`);
+}
