@@ -87,3 +87,12 @@ console.log(
     .getInventoryValue()
     .toFixed(2)}`
 );
+// script.js
+
+Product.applyDiscount(store.inventory, 0.15);
+
+console.log(
+  `Total Inventory Value (After Discount): $${store
+    .getInventoryValue()
+    .toFixed(2)}`
+);
