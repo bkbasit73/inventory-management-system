@@ -36,3 +36,14 @@ const yogurt = new PerishableProduct("Yogurt", 2.0, 20, "2024-12-15");
 
 console.log(milk.toString());
 console.log(yogurt.toString());
+// script.js
+
+class Product {
+  // Existing code...
+
+  static applyDiscount(products, discount) {
+    products.forEach((product) => {
+      product.price -= product.price * discount;
+    });
+  }
+}
